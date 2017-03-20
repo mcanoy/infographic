@@ -13,7 +13,7 @@ $(document).ready(function() {
             var arrowRight = docWidth - 1200;
             arrowRight = arrowRight / 2 + "px";
             document.getElementById("arrowBox").style.right = arrowRight;
-            console.log(arrowRight + "set the right style");
+            console.log(arrowRight + " set the right style");
         }
     });
 
@@ -21,7 +21,7 @@ $(document).ready(function() {
         var arrowRight = docWidth - 1230;
         arrowRight = arrowRight / 2 + "px";
         document.getElementById("arrowBox").style.right = arrowRight;
-        console.log(arrowRight + "set the right style");
+        console.log(arrowRight + " set the right style");
     }
 
 
@@ -131,6 +131,10 @@ $(document).ready(function() {
         positionArrow('#devops-tools-row');
         positionArrow('#container-platform-row');
         positionArrow('#iaas-row');
+    })
+
+    $(".rh-logo").error(function() {
+        $(this).attr('src', 'images/red-hat-logo-default.png');
     })
 
 });
